@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no">
+
+<title>Happy Anniversary Lumyy ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#050405;
+
+    color:#fff;
+
+    font-family:'Montserrat',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =========================================
+   CINEMATIC BACKGROUND
+========================================= */
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-10;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 20%,
+        rgba(235,75,120,.20),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 85% 75%,
+        rgba(126,44,100,.22),
+        transparent 32%
+    ),
+
+    linear-gradient(
+        145deg,
+        #030304,
+        #160810 45%,
+        #080509
+    );
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-9;
+
+    opacity:.15;
+
+    background-image:
+
+    radial-gradient(
+        rgba(255,255,255,.8) 1px,
+        transparent 1px
+    );
+
+    background-size:55px 55px;
+
+    animation:
+        starsMove 25s linear infinite;
+
+}
+
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-55px);
+    }
+
+}
+
+
+/* =========================================
+   FILM GRAIN
+========================================= */
+
+
+.noise{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:100;
+
+    opacity:.035;
+
+    background-image:
+
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+}
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+
+.floating-heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    color:#f080a0;
+
+    opacity:0;
+
+    animation:
+        floatHeart linear forwards;
+
+}
+
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:
+        translateY(0)
+        translateX(0)
+        scale(.5)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.6;
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-115vh)
+        translateX(var(--drift))
+        scale(1.3)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+
+.music-button{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    border:1px solid
+    rgba(255,255,255,.18);
+
+    background:
+    rgba(15,8,13,.75);
+
+    backdrop-filter:
+    blur(18px);
+
+    color:white;
+
+    font-size:20px;
+
+    z-index:90;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+
+}
+
+
+.music-button.playing{
+
+    animation:
+    musicGlow 1.5s infinite;
+
+}
+
+
+@keyframes musicGlow{
+
+    50%{
+
+        box-shadow:
+
+        0 0 0 8px
+        rgba(235,93,130,.05),
+
+        0 0 35px
+        rgba(235,93,130,.45);
+
+    }
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+
+.hero{
+
+    min-height:100svh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:30px 22px;
+
+    position:relative;
+
+}
+
+
+.hero-content{
+
+    width:100%;
+
+    max-width:900px;
+
+}
+
+
+.eyebrow{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.17);
+
+    border-radius:100px;
+
+    background:
+    rgba(255,255,255,.035);
+
+    backdrop-filter:
+    blur(15px);
+
+    color:#e8b6c4;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    animation:
+    reveal 1.1s ease forwards;
+
+}
+
+
+.hero h1{
+
+    margin-top:30px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-weight:300;
+
+    font-size:
+    clamp(62px,15vw,135px);
+
+    line-height:.78;
+
+    letter-spacing:-4px;
+
+    animation:
+    heroTitle 1.5s .15s
+    cubic-bezier(.2,.8,.2,1)
+    both;
+
+}
+
+
+.hero h1 .pink{
+
+    color:#ef8fa9;
+
+    font-style:italic;
+
+}
+
+
+.hero h1 .small{
+
+    font-size:.72em;
+
+    letter-spacing:-2px;
+
+}
+
+
+@keyframes heroTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(50px)
+        scale(.95);
+
+        filter:blur(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1);
+
+        filter:blur(0);
+
+    }
+
+}
+
+
+.hero-sub{
+
+    max-width:600px;
+
+    margin:
+    35px auto 0;
+
+    color:#cbbcc3;
+
+    font-size:14px;
+
+    line-height:2;
+
+    letter-spacing:1px;
+
+    animation:
+    reveal 1.2s .55s both;
+
+}
+
+
+@keyframes reveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   HEART
+========================================= */
+
+
+.hero-heart{
+
+    margin:30px 0;
+
+    font-size:42px;
+
+    display:block;
+
+    color:#ed89a5;
+
+    animation:
+
+    heartbeat 2s infinite,
+
+    reveal 1.2s .7s both;
+
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.18);
+
+        filter:
+        drop-shadow(
+            0 0 20px
+            rgba(240,90,125,.55)
+        );
+
+    }
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+
+.story-button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:
+    17px 32px;
+
+    border-radius:100px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #ed7899,
+        #a84168
+    );
+
+    color:white;
+
+    font-family:
+    'Montserrat',
+    sans-serif;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:2.5px;
+
+    box-shadow:
+
+    0 18px 45px
+    rgba(195,57,100,.25);
+
+    transition:.35s;
+
+    animation:
+    reveal 1.2s .9s both;
+
+}
+
+
+.story-button:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+
+    box-shadow:
+
+    0 25px 60px
+    rgba(195,57,100,.42);
+
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+
+section{
+
+    position:relative;
+
+}
+
+
+.container{
+
+    width:min(960px,92%);
+
+    margin:auto;
+
+}
+
+
+.section{
+
+    padding:115px 0;
+
+}
+
+
+.title{
+
+    text-align:center;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:
+    clamp(45px,9vw,75px);
+
+    font-weight:400;
+
+}
+
+
+.description{
+
+    max-width:680px;
+
+    margin:
+    20px auto 65px;
+
+    text-align:center;
+
+    color:#c6b7be;
+
+    font-size:13px;
+
+    line-height:2;
+
+}
+
+
+/* =========================================
+   MAIN PHOTO
+========================================= */
+
+
+.main-photo{
+
+    width:min(520px,92%);
+
+    margin:
+    0 auto 80px;
+
+    position:relative;
+
+}
+
+
+.main-photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-30px;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(231,91,127,.18),
+        transparent 65%
+    );
+
+    filter:blur(20px);
+
+    z-index:-1;
+
+}
+
+
+.photo-frame{
+
+    padding:8px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.28),
+        rgba(255,255,255,.03)
+    );
+
+    box-shadow:
+
+    0 35px 100px
+    rgba(0,0,0,.65);
+
+    overflow:hidden;
+
+}
+
+
+.photo-frame img{
+
+    width:100%;
+
+    display:block;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    border-radius:23px;
+
+}
+
+
+/* =========================================
+   PHOTO GALLERY
+========================================= */
+
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+.gallery-item{
+
+    height:390px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:
+    1px solid
+    rgba(255,255,255,.1);
+
+    background:#12090f;
+
+    position:relative;
+
+}
+
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+    transform 1s
+    cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.gallery-item:hover img{
+
+    transform:scale(1.09);
+
+}
+
+
+.gallery-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.35),
+        transparent 50%
+    );
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================
+   LOVE MESSAGE
+========================================= */
+
+
+.love-message{
+
+    text-align:center;
+
+    padding:
+    120px 20px;
+
+}
+
+
+.love-message h2{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:
+    clamp(40px,8vw,72px);
+
+    font-weight:400;
+
+}
+
+
+.love-message p{
+
+    max-width:650px;
+
+    margin:25px auto;
+
+    color:#c9bbc1;
+
+    font-size:14px;
+
+    line-height:2;
+
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+
+.timeline{
+
+    max-width:760px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    width:1px;
+
+    background:
+
+    linear-gradient(
+        transparent,
+        #a9486a,
+        transparent
+    );
+
+}
+
+
+.timeline-item{
+
+    width:50%;
+
+    padding:18px 35px;
+
+}
+
+
+.timeline-item:nth-child(even){
+
+    margin-left:50%;
+
+}
+
+
+.timeline-item:nth-child(odd){
+
+    text-align:right;
+
+}
+
+
+.timeline-card{
+
+    padding:27px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.1);
+
+    border-radius:23px;
+
+    background:
+
+    rgba(255,255,255,.035);
+
+    backdrop-filter:
+    blur(16px);
+
+}
+
+
+.timeline-card small{
+
+    color:#e889a3;
+
+    font-size:9px;
+
+    letter-spacing:3px;
+
+}
+
+
+.timeline-card h3{
+
+    margin:
+    8px 0;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:29px;
+
+    font-weight:500;
+
+}
+
+
+.timeline-card p{
+
+    color:#b7a9b0;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+
+.quote-section{
+
+    padding:
+    150px 25px;
+
+    text-align:center;
+
+}
+
+
+.quote{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-style:italic;
+
+    font-size:
+    clamp(31px,6vw,60px);
+
+    line-height:1.2;
+
+}
+
+
+.quote-mark{
+
+    display:block;
+
+    font-size:90px;
+
+    height:50px;
+
+    color:#d55f82;
+
+}
+
+
+.quote-small{
+
+    margin-top:30px;
+
+    color:#98818b;
+
+    font-size:9px;
+
+    letter-spacing:4px;
+
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+
+.final{
+
+    min-height:90svh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+.final-heart{
+
+    font-size:45px;
+
+    color:#ed8ba6;
+
+    animation:
+    heartbeat 1.8s infinite;
+
+}
+
+
+.final h2{
+
+    margin-top:25px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:
+    clamp(65px,13vw,120px);
+
+    line-height:.8;
+
+    font-weight:300;
+
+}
+
+
+.final h2 span{
+
+    color:#ee91aa;
+
+    font-style:italic;
+
+}
+
+
+.final p{
+
+    max-width:620px;
+
+    margin:
+    35px auto;
+
+    color:#c6b7be;
+
+    font-size:13px;
+
+    line-height:2;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+
+footer{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#675861;
+
+    font-size:9px;
+
+    letter-spacing:3px;
+
+}
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+
+.reveal-on-scroll{
+
+    opacity:0;
+
+    transform:
+    translateY(45px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+
+}
+
+
+.reveal-on-scroll.visible{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+@media(max-width:650px){
+
+    .hero h1{
+
+        letter-spacing:-3px;
+
+    }
+
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .gallery-item{
+
+        height:460px;
+
+    }
+
+
+    .timeline::before{
+
+        left:8px;
+
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(even){
+
+        width:100%;
+
+        margin-left:0;
+
+        padding:
+        12px 0 12px 32px;
+
+        text-align:left;
+
+    }
+
+
+    .section{
+
+        padding:90px 0;
+
+    }
+
+
+    .quote-section{
+
+        padding:110px 20px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="noise"></div>
+
+
+<!-- MUSIC -->
+
+<button
+class="music-button"
+id="musicButton">
+
+♫
+
+</button>
+
+
+<!-- ACTUAL MUSIC FILE -->
+
+<audio
+    id="backgroundMusic"
+    src="https://mp3tourl.com/audio/1791299285315-65782c3f-12a7-4d9f-b28c-fc8c85385bb3.mp3"
+    loop
+    preload="auto"
+    playsinline>
+</audio>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+
+<div class="eyebrow">
+
+OUR 7TH ANNIVERSARY
+
+</div>
+
+
+<h1>
+
+Happy
+
+<br>
+
+<span class="pink">
+Anniversary
+</span>
+
+<br>
+
+<span class="small">
+Lumyy
+</span>
+
+</h1>
+
+
+<span class="hero-heart">
+♥
+</span>
+
+
+<p class="hero-sub">
+
+Seven years.
+Countless memories.
+One person I would still choose
+over and over again.
+
+</p>
+
+
+<button
+class="story-button"
+onclick="openStory()">
+
+OPEN OUR STORY
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     STORY
+===================================== -->
+
+
+<section
+class="section"
+id="story">
+
+
+<div class="container">
+
+
+<h2
+class="title reveal-on-scroll">
+
+Our Story
+
+</h2>
+
+
+<p
+class="description reveal-on-scroll">
+
+Some stories are written in books.
+Ours is written in little moments —
+the smiles, the random conversations,
+the laughter, the difficult days,
+and every beautiful memory
+that became a part of us.
+
+</p>
+
+
+
+<!-- MAIN PHOTO -->
+
+<div
+class="main-photo reveal-on-scroll">
+
+<div class="photo-frame">
+
+<img
+src="https://plain-apac-prod-public.komododecks.com/202610/06/5MwvTorM1DF4T0JUDpZO/image.jpg"
+alt="Our beautiful memory">
+
+</div>
+
+</div>
+
+
+
+<!-- GALLERY -->
+
+<div class="gallery">
+
+
+<div
+class="gallery-item
+reveal-on-scroll">
+
+<img
+src="https://plain-apac-prod-public.komododecks.com/202610/06/jrtEd4BOLPGz26BQ3EGc/image.jpg"
+alt="Memory one">
+
+</div>
+
+
+<div
+class="gallery-item
+reveal-on-scroll">
+
+<img
+src="https://plain-apac-prod-public.komododecks.com/202610/06/ls1JOthfflTniiCR6c7m/image.jpg"
+alt="Memory two">
+
+</div>
+
+
+<div
+class="gallery-item
+reveal-on-scroll">
+
+<img
+src="https://plain-apac-prod-public.komododecks.com/202610/06/YR1hqG4ZYKaaUzycaNY5/image.jpg"
+alt="Memory three">
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     MESSAGE
+===================================== -->
+
+
+<section
+class="love-message">
+
+
+<h2
+class="reveal-on-scroll">
+
+Seven Years.
+Still You.
+
+</h2>
+
+
+<p
+class="reveal-on-scroll">
+
+Seven years taught me something simple:
+love isn't about having perfect days.
+It's about finding the same person
+worth choosing on every kind of day.
+
+And I would choose you again.
+
+</p>
+
+
+</section>
+
+
+
+<!-- =====================================
+     TIMELINE
+===================================== -->
+
+
+<section
+class="section">
+
+
+<div class="container">
+
+
+<h2
+class="title reveal-on-scroll">
+
+Seven Chapters
+
+</h2>
+
+
+<p
+class="description reveal-on-scroll">
+
+Seven years behind us.
+A lifetime still waiting for us.
+
+</p>
+
+
+
+<div class="timeline">
+
+
+<div
+class="timeline-item
+reveal-on-scroll">
+
+
+<div class="timeline-card">
+
+<small>
+CHAPTER 01
+</small>
+
+<h3>
+Where it began
+</h3>
+
+<p>
+
+One moment became a memory,
+one memory became a feeling,
+and that feeling became us.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div
+class="timeline-item
+reveal-on-scroll">
+
+
+<div class="timeline-card">
+
+<small>
+CHAPTER 02
+</small>
+
+<h3>
+Growing together
+</h3>
+
+<p>
+
+We grew, changed,
+learned and discovered
+new versions of each other.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div
+class="timeline-item
+reveal-on-scroll">
+
+
+<div class="timeline-card">
+
+<small>
+CHAPTER 03
+</small>
+
+<h3>
+The little things
+</h3>
+
+<p>
+
+The laughs.
+The random moments.
+The memories nobody else
+would understand.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div
+class="timeline-item
+reveal-on-scroll">
+
+
+<div class="timeline-card">
+
+<small>
+CHAPTER 04
+</small>
+
+<h3>
+Still choosing you
+</h3>
+
+<p>
+
+After seven years,
+my favorite part is knowing
+our story is still being written.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div
+class="timeline-item
+reveal-on-scroll">
+
+
+<div class="timeline-card">
+
+<small>
+CHAPTER 05
+</small>
+
+<h3>
+Our next chapter
+</h3>
+
+<p>
+
+More places.
+More memories.
+More ordinary days
+that become extraordinary.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     QUOTE
+===================================== -->
+
+
+<section
+class="quote-section">
+
+
+<div
+class="quote reveal-on-scroll">
+
+
+<span class="quote-mark">
+“
+</span>
+
+
+If I had to live
+these seven years
+all over again,
+
+I would find you
+every single time.
+
+
+</div>
+
+
+<div
+class="quote-small
+reveal-on-scroll">
+
+WITH LOVE • ALWAYS
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     FINAL
+===================================== -->
+
+
+<section
+class="final">
+
+
+<div>
+
+
+<div class="final-heart">
+♥
+</div>
+
+
+<h2
+class="reveal-on-scroll">
+
+Here's to
+
+<br>
+
+<span>
+Us.
+</span>
+
+</h2>
+
+
+<p
+class="reveal-on-scroll">
+
+Happy 7th Anniversary, Lumyy.
+
+Thank you for being
+my favorite person,
+my safest place,
+and my most beautiful chapter.
+
+Seven years down.
+
+Forever to go.
+
+</p>
+
+
+<button
+class="story-button"
+onclick="window.scrollTo({
+top:0,
+behavior:'smooth'
+})">
+
+BACK TO THE BEGINNING
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+MADE WITH LOVE
+• 7TH ANNIVERSARY
+• LUMYY ❤️
+
+</footer>
+
+
+
+<script>
+
+
+/* =========================================
+   OPEN STORY
+========================================= */
+
+
+function openStory(){
+
+    document
+    .getElementById("story")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+    startMusic();
+
+}
+
+
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+
+const observer =
+new IntersectionObserver(
+
+(entries)=>{
+
+    entries.forEach(
+    entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target
+            .classList
+            .add("visible");
+
+        }
+
+    });
+
+},
+
+{
+    threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(
+".reveal-on-scroll"
+)
+.forEach(
+el=>observer.observe(el)
+);
+
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+
+function createFloatingHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className =
+    "floating-heart";
+
+    heart.innerHTML =
+    Math.random() > .5
+    ? "♥"
+    : "♡";
+
+    heart.style.left =
+    Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+    (10 + Math.random()*18) + "px";
+
+    heart.style.animationDuration =
+    (8 + Math.random()*8) + "s";
+
+    heart.style.setProperty(
+        "--drift",
+        (-100 + Math.random()*200) + "px"
+    );
+
+    document.body.appendChild(heart);
+
+    setTimeout(
+        ()=>{
+            heart.remove();
+        },
+        17000
+    );
+
+}
+
+
+setInterval(
+    createFloatingHeart,
+    700
+);
+
+
+
+/* =========================================
+   ACTUAL ROMANTIC MUSIC
+
+   YOUR MP3 FILE
+   AUTOPLAY + LOOP
+
+   NO SYNTHETIC BEEP MUSIC
+========================================= */
+
+
+const backgroundMusic =
+document.getElementById(
+    "backgroundMusic"
+);
+
+
+const musicButton =
+document.getElementById(
+    "musicButton"
+);
+
+
+let musicPlaying = false;
+
+
+/*
+    Full volume.
+
+    The MP3 itself controls its
+    original loudness, while 1.0
+    tells the browser not to
+    reduce its volume.
+*/
+
+backgroundMusic.volume = 1.0;
+
+
+/* =========================================
+   UPDATE BUTTON
+========================================= */
+
+
+function musicIsPlaying(){
+
+    musicPlaying = true;
+
+    musicButton
+    .classList
+    .add("playing");
+
+    musicButton.innerHTML =
+    "❚❚";
+
+}
+
+
+function musicIsPaused(){
+
+    musicPlaying = false;
+
+    musicButton
+    .classList
+    .remove("playing");
+
+    musicButton.innerHTML =
+    "♫";
+
+}
+
+
+/* =========================================
+   START MUSIC
+========================================= */
+
+
+async function startMusic(){
+
+    try{
+
+        backgroundMusic.volume = 1.0;
+
+        await backgroundMusic.play();
+
+        musicIsPlaying();
+
+    }
+
+    catch(error){
+
+        /*
+           Browser autoplay policy may
+           temporarily block sound.
+
+           The first user interaction
+           below will retry automatically.
+        */
+
+        musicIsPaused();
+
+    }
+
+}
+
+
+/* =========================================
+   STOP MUSIC
+========================================= */
+
+
+function stopMusic(){
+
+    backgroundMusic.pause();
+
+    musicIsPaused();
+
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+
+musicButton.addEventListener(
+    "click",
+    async function(event){
+
+        event.stopPropagation();
+
+
+        if(
+            backgroundMusic.paused
+        ){
+
+            await startMusic();
+
+        }
+
+        else{
+
+            stopMusic();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   AUTOPLAY ON PAGE LOAD
+========================================= */
+
+
+window.addEventListener(
+    "load",
+    function(){
+
+        /*
+           Try immediately when the
+           website opens.
+        */
+
+        setTimeout(
+            function(){
+
+                startMusic();
+
+            },
+            300
+        );
+
+    }
+);
+
+
+/* =========================================
+   IPHONE / SAFARI AUTOPLAY FALLBACK
+========================================= */
+
+
+let firstInteractionDone =
+false;
+
+
+async function firstInteraction(){
+
+    if(firstInteractionDone){
+
+        return;
+
+    }
+
+
+    firstInteractionDone =
+    true;
+
+
+    /*
+       If autoplay was blocked,
+       this first touch/click will
+       immediately start the actual MP3.
+    */
+
+    if(
+        backgroundMusic.paused
+    ){
+
+        await startMusic();
+
+    }
+
+
+    document.removeEventListener(
+        "touchstart",
+        firstInteraction
+    );
+
+    document.removeEventListener(
+        "pointerdown",
+        firstInteraction
+    );
+
+}
+
+
+document.addEventListener(
+    "touchstart",
+    firstInteraction,
+    {
+        passive:true
+    }
+);
+
+
+document.addEventListener(
+    "pointerdown",
+    firstInteraction
+);
+
+
+/* =========================================
+   KEEP BUTTON STATE CORRECT
+========================================= */
+
+
+backgroundMusic.addEventListener(
+    "play",
+    musicIsPlaying
+);
+
+
+backgroundMusic.addEventListener(
+    "pause",
+    musicIsPaused
+);
+
+
+backgroundMusic.addEventListener(
+    "ended",
+    function(){
+
+        /*
+           Loop should normally prevent
+           this, but keep it safe.
+        */
+
+        backgroundMusic.currentTime = 0;
+
+        startMusic();
+
+    }
+);
+
+
+</script>
+
+
+</body>
+</html>
